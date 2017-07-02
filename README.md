@@ -16,3 +16,9 @@ http://www.youtube.com/user/c9ide.
 
 Happy coding!
 The Cloud9 IDE team
+
+|Name  	    |Path   	    |HTTP Verb   	|Purpose   	                                |
+|---	    |---	        |---	        |---	                                    |
+|Index   	|/blogs     	|GET   	        |List all blogs   	                        |
+|New   	    |/blogs/new   	|GET   	        |Show the new blog form   	                |
+|Create   	|/blogs     	|POST   	    |Create a new blog and redirect   	        |

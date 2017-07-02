@@ -7,18 +7,15 @@
     ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+# RESTful routes used in the app
 
-Happy coding!
-The Cloud9 IDE team
-
-|Name  	    |Path   	    |HTTP Verb   	|Purpose   	                                |
-|---	    |---	        |---	        |---	                                    |
-|Index   	|/blogs     	|GET   	        |List all blogs   	                        |
-|New   	    |/blogs/new   	|GET   	        |Show the new blog form   	                |
-|Create   	|/blogs     	|POST   	    |Create a new blog and redirect   	        |
+|Name  	    |Path   	        |HTTP Verb   	|Purpose   	                      |Mongoose Method
+|---	    |---	            |---	        |---	                          |---
+|Index   	|/blogs     	    |GET   	        |List all blogs   	              |Blog.find()
+|New   	    |/blogs/new   	    |GET   	        |Show the new blog form           |NA
+|Create   	|/blogs     	    |POST   	    |Create a new blog and redirect   |Blog.create()
+|Show   	|/blogs/:id     	|GET   	        |Show a specific blog             |Blog.findById()
+|Update   	|/blogs/:id     	|PUT   	        |Update a specific blog           |Blog.findByIdandUpdate()
+|Edit   	|/blogs/:id/edit    |GET   	        |Show the edit form for one blog  |Blog.findById()
+|Destroy   	|/blogs/:id/        |DELETE 	    |Delete a particular Blog         |Blog.findByIdAndRemove()

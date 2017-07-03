@@ -19,3 +19,13 @@
 |Update   	|/blogs/:id     	|PUT   	        |Update a specific blog           |Blog.findByIdandUpdate()
 |Edit   	|/blogs/:id/edit    |GET   	        |Show the edit form for one blog  |Blog.findById()
 |Destroy   	|/blogs/:id/        |DELETE 	    |Delete a particular Blog         |Blog.findByIdAndRemove()
+
+## Packages required
+
+* express
+* ejs
+* body-parser
+* request
+* mongoose
+* method-override
+* express-sanitizer

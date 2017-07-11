@@ -16,8 +16,8 @@
 |New   	    |/blogs/new   	    |GET   	        |Show the new blog form           |NA
 |Create   	|/blogs     	    |POST   	    |Create a new blog and redirect   |Blog.create()
 |Show   	|/blogs/:id     	|GET   	        |Show a specific blog             |Blog.findById()
-|Update   	|/blogs/:id     	|PUT   	        |Update a specific blog           |Blog.findByIdandUpdate()
 |Edit   	|/blogs/:id/edit    |GET   	        |Show the edit form for one blog  |Blog.findById()
+|Update   	|/blogs/:id     	|PUT   	        |Update a specific blog           |Blog.findByIdandUpdate()
 |Destroy   	|/blogs/:id/        |DELETE 	    |Delete a particular Blog         |Blog.findByIdAndRemove()
 
 ## Packages required

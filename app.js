@@ -8,7 +8,15 @@ var express 	      = require("express"),
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/restful_blog_app");
+mongoose.connect(process.env.DATABASEURL, {useMongoClient : true}, function(err){
+    if (err) {
+        console.log(process.env.DATABASEURL);
+        console.log("Database is not connected.");
+    } else {
+        console.log("Database connected successfully.");
+    }
+    
+});
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
